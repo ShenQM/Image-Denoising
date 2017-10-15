@@ -133,6 +133,7 @@ namespace sqm{
 				}
 
 				//get the estimated patch centered at point(x,y)
+				//printf("weight_total:%f\n", weight_total);
 				if (weight_total > 1e-6){
 					for (int r = -radius; r <= radius; ++r){
 						int patch_idx = (r + _half_patch_win)*patch_width + _half_patch_win;
